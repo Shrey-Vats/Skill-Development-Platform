@@ -1,0 +1,20 @@
+# Kubernetes deployment configuration (placeholder)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mega-project-x
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mega-project-x
+  template:
+    metadata:
+      labels:
+        app: mega-project-x
+    spec:
+      containers:
+        - name: mega-project-x
+          image: mega-project-x:latest
+          ports:
+            - containerPort: 5000

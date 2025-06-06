@@ -1,0 +1,13 @@
+# Kubernetes service configuration for expose (placeholder)
+apiVersion: v1
+kind: Service
+metadata:
+  name: mega-project-x-service
+spec:
+  selector:
+    app: mega-project-x
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: ClusterIP

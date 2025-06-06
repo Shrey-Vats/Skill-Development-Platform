@@ -1,0 +1,8 @@
+# Serverless framework configuration (placeholder)
+service: mega-project-x
+provider:
+  name: aws
+  runtime: python3.9
+functions:
+  mlInference:
+    handler: lambda_function.handler
